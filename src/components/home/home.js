@@ -3,7 +3,9 @@ import './home.css'
 
 function Home() {
     return (
-        <img src={require('./image.jpg')} alt="Sound bars background"></img>
+        <div>
+            <img src={require('./image.jpg')} alt="Sound bars background"></img>
+        </div>
     )
 }
 

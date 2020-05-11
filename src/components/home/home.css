@@ -2,6 +2,11 @@ img {
     width: 100%;
 }
 
-body {
+div {
+    height: 100vh;
     background-color: black;
+}
+
+body {
+    background-color:white;
 }
