@@ -1,5 +1,5 @@
 nav {
-    background-color: aqua;
+    background-color: rgb(220, 220, 220);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,13 +10,18 @@ nav {
     /* width: 70%; */
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 1px;
     flex-flow: row wrap;
     align-items: center;
     list-style: none;
 }
 
 a {
-    color:rebeccapurple;
-    padding: 10px;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;  
 }
