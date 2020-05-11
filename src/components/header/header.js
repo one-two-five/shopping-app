@@ -4,7 +4,7 @@ import './header.css'
 function Header() {
     return (
         <header>
-            <h1>MARK SOUND</h1>
+            <h1>MARK'S SOUND</h1>
         </header>
     )
 }
