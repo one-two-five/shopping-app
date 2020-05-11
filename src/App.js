@@ -6,12 +6,14 @@ import Nav from './components/nav-bar/nav-bar'
 import Home from './components/home/home'
 import ProductListPage from './components/plp-page/plp-page'
 import BasketPage from './components/basket-page/basket-page'
+import Header from './components/header/header';
 
 
 function App() {
   return (
     <Router>
     <div className="App">
+        <Header/>
         <Nav/>
           <Switch>
             <Route path='/' exact component={Home}/>
