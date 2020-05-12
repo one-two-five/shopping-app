@@ -7,5 +7,10 @@
 
 .site-header > hr {
     width: 90%;
-    color: rgb(220, 220, 220);
+
 }
+
+.second-word {
+    color: rgb(232, 10, 10);
+}
+

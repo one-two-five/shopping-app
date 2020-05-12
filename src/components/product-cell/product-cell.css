@@ -1,6 +1,10 @@
 .product-cell {
     text-align: center;
-    max-width: 300px;
+    max-width: 400px;
+    background-color: white;
+    border-color: black;
+    border-style: ridge;
+    border-width: 1px;
 }
 
 .product-cell > img {

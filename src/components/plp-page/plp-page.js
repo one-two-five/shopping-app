@@ -5,13 +5,14 @@ import ProdudctCell from '../product-cell/product-cell';
 function ProductListPage(props) {
 
     return (
-        <div>
+        <div className='header-container'>
             <h1 className='plp-header'>{props.title}</h1>
-            {props.items.map(item => {
-                console.log(item.title)   
-                {/* return ProdudctCell(element)   */}
-                return <ProdudctCell item={item} key={item.key}/>  
-            })}
+            <div className='product-grid'>
+                {props.items.map(item => {
+                    console.log(item.title)   
+                    return <ProdudctCell item={item} key={item.key}/>  
+                })}
+            </div>
         </div>
     )
 }
