@@ -8,6 +8,7 @@ import ProductListPage from './components/plp-page/plp-page'
 import BasketPage from './components/basket-page/basket-page'
 import Header from './components/header/header';
 import speakers from './data/speakers'
+import turntables from './data/turntables'
 
 function App() {
 
@@ -16,7 +17,11 @@ function App() {
     return item
   })
 
-  speakers.title = "Speakers"
+  let keyedTurntables = turntables.map((item, index) => {
+    item.key = index
+    return item
+  })
+
   return (
     <Router>
     <div className="App">
@@ -24,7 +29,7 @@ function App() {
         <Nav/>
           <Switch>
             <Route path='/' exact component={Home}/>
-            <Route path='/turntables' exact render={(props) => <ProductListPage title="Turntables" {...props} />}/>
+            <Route path='/turntables' exact render={(props) => <ProductListPage title="Turntables" items={keyedTurntables} {...props} />}/>
             <Route path='/speakers' exact render={(props) => <ProductListPage title="Speakers" items={keyedSpeakers} {...props} />}/>
             <Route path='/basket' exact component={BasketPage}/>
           </Switch>
