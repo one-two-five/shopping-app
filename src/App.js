@@ -7,8 +7,10 @@ import Home from './components/home/home'
 import ProductListPage from './components/plp-page/plp-page'
 import BasketPage from './components/basket-page/basket-page'
 import Header from './components/header/header';
+import speakers from './data/speakers'
 
 function App() {
+  speakers.title = "Speakers"
   return (
     <Router>
     <div className="App">
@@ -17,7 +19,7 @@ function App() {
           <Switch>
             <Route path='/' exact component={Home}/>
             <Route path='/turntables' exact render={(props) => <ProductListPage title="Turntables" {...props} />}/>
-            <Route path='/speakers' exact render={(props) => <ProductListPage title="Speakers" {...props} />}/>
+            <Route path='/speakers' exact render={(props) => <ProductListPage title="Speakers" items={speakers} {...props} />}/>
             <Route path='/basket' exact component={BasketPage}/>
           </Switch>
     </div>

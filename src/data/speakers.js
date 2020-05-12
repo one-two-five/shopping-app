@@ -84,3 +84,5 @@ const speakers = [
         img: "https://www.richersounds.com/media/catalog/product/6/8/68475f4de87be79333008732d071fe36139002a1_402084_v2.jpg?width=240&height=300&canvas=240:300&quality=80&bg-color=255,255,255&fit=bounds&dpr=2"
     }
 ]
+
+export default speakers

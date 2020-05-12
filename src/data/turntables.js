@@ -84,3 +84,5 @@ const turntables = [
         img: "https://www.richersounds.com/media/catalog/product/d/d/dd3fee8b3f4384aaba6cdc203459983afdd40224_400699.jpg?width=240&height=300&canvas=240:300&quality=80&bg-color=255,255,255&fit=bounds&dpr=2"
     }
 ]
+
+export default turntables
