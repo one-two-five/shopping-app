@@ -8,7 +8,6 @@ import ProductListPage from './components/plp-page/plp-page'
 import BasketPage from './components/basket-page/basket-page'
 import Header from './components/header/header';
 
-
 function App() {
   return (
     <Router>
@@ -17,9 +16,9 @@ function App() {
         <Nav/>
           <Switch>
             <Route path='/' exact component={Home}/>
-            <Route path='/turntables' exact component={ProductListPage}/>
+            <Route path='/turntables' exact render={(props) => <ProductListPage title="Turntables" {...props} />}/>
             <Route path='/speakers' exact render={(props) => <ProductListPage title="Speakers" {...props} />}/>
-            <Route path='/basket' exact render={(props) => <ProductListPage title="Turntables" {...props} />}/>
+            <Route path='/basket' exact component={BasketPage}/>
           </Switch>
     </div>
     </Router>
