@@ -2,11 +2,10 @@ import React from 'react';
 import './plp-page.css'
 import ProdudctCell from '../product-cell/product-cell';
 
-
-function ProductListPage() {
+function ProductListPage(props) {
     return (
         <div>
-            <h1 className='plp-header'>Product List Page</h1>
+            <h1 className='plp-header'>{props.title}</h1>
             <ProdudctCell/>
         </div>
     )

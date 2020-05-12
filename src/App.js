@@ -18,8 +18,8 @@ function App() {
           <Switch>
             <Route path='/' exact component={Home}/>
             <Route path='/turntables' exact component={ProductListPage}/>
-            <Route path='/speakers' exact component={ProductListPage}/>
-            <Route path='/basket' exact component={BasketPage}/>
+            <Route path='/speakers' exact render={(props) => <ProductListPage title="Speakers" {...props} />}/>
+            <Route path='/basket' exact render={(props) => <ProductListPage title="Turntables" {...props} />}/>
           </Switch>
     </div>
     </Router>
