@@ -10,6 +10,12 @@ import Header from './components/header/header';
 import speakers from './data/speakers'
 
 function App() {
+
+  let keyedSpeakers = speakers.map((item, index) => {
+    item.key = index
+    return item
+  })
+
   speakers.title = "Speakers"
   return (
     <Router>
@@ -19,7 +25,7 @@ function App() {
           <Switch>
             <Route path='/' exact component={Home}/>
             <Route path='/turntables' exact render={(props) => <ProductListPage title="Turntables" {...props} />}/>
-            <Route path='/speakers' exact render={(props) => <ProductListPage title="Speakers" items={speakers} {...props} />}/>
+            <Route path='/speakers' exact render={(props) => <ProductListPage title="Speakers" items={keyedSpeakers} {...props} />}/>
             <Route path='/basket' exact component={BasketPage}/>
           </Switch>
     </div>
