@@ -3,7 +3,7 @@ import './header.css'
 
 function Header() {
     return (
-        <header>
+        <header className='site-header'>
             <h1>MARK'S SOUND</h1>
             <hr/>
         </header>

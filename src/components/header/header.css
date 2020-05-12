@@ -1,10 +1,11 @@
-header {
+.site-header {
     background-color: rgb(220, 220, 220);
     position: relative;
     padding: 5px;
+    text-align: center;
 }
 
-hr {
+.site-header > hr {
     width: 90%;
     color: rgb(220, 220, 220);
 }

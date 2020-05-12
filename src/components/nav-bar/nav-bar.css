@@ -1,4 +1,4 @@
-nav {
+.nav-bar {
     background-color: rgb(220, 220, 220);
     display: flex;
     justify-content: space-around;
@@ -7,7 +7,6 @@ nav {
 }
 
 .nav-links {
-    /* width: 70%; */
     display: flex;
     justify-content: space-around;
     padding: 1px;
@@ -16,12 +15,12 @@ nav {
     list-style: none;
 }
 
-a {
+.link {
     color: black;
     padding: 12px;
     text-decoration: none;
 }
 
-a:hover {
+.link:hover {
   text-decoration: underline;  
 }
