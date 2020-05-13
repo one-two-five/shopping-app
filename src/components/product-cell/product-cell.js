@@ -4,11 +4,11 @@ import './product-cell.css'
 function ProductCell(props) {
     return (
         <div className='product-cell'>
-            <h5>{props.item.title}</h5>
-            <p>{props.item.info}</p>
-            <p>Rating: {props.item.rating}</p>
-            <p>£{props.item.price}</p>
             <img src={props.item.img}></img>
+            <h4>{props.item.title}</h4>
+            <p>{props.item.info}</p>
+            <p>Rating: {props.item.stars}</p>
+            <p className='price'>£{props.item.price}</p>
         </div>
     )
 }

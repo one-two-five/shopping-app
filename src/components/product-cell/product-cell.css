@@ -1,6 +1,6 @@
 .product-cell {
     text-align: center;
-    max-width: 400px;
+    max-width: 500px;
     background-color: white;
     border-color: black;
     border-style: ridge;
@@ -9,9 +9,15 @@
 
 .product-cell > img {
     display: block;
-    max-width: 60%;
+    max-width: 50%;
     text-align: center;
     margin: auto;
     width: auto;
     height: auto;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.price {
+    color: red;
 }
