@@ -1,5 +1,6 @@
 import React from 'react'
 import './product-cell.css'
+import Stars from '../stars/stars'
 
 function ProductCell(props) {
     return (
@@ -8,8 +9,8 @@ function ProductCell(props) {
             <h4>{props.item.title}</h4>
             <h5>{props.item.info}</h5>
             <span className='pound'>£</span><span className='price'>{props.item.price}</span>
-            <p>Was - £{props.item.was}</p>
-            <p>Rating: {props.item.stars}</p>
+            <p className='was'>Was - £{props.item.was}</p>
+            <Stars stars={props.item.stars}/>
         </div>
     )
 }

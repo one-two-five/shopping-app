@@ -1,0 +1,9 @@
+.star-container {
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.star {
+    max-height: 30px;
+}
