@@ -1,5 +1,5 @@
 .nav-bar {
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(242, 242, 242);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,5 +23,5 @@
 
 .link:hover {
   text-decoration: underline;  
-  color:  rgb(100, 86, 189);
+  color:  red;
 }
