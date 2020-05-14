@@ -1,0 +1,53 @@
+.basket-header {
+    text-align: center;
+}
+
+.basket-flex {
+    display: flex;
+    flex-flow: wrap;
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+    border-top: black;
+    border-top-style: solid;
+    border-width: 1px;
+    justify-content: center;
+}
+
+.basket-header-container {
+    border-top: rgb(233, 13, 13);
+    border-top-style: solid;
+    border-width: 2px;
+}
+
+.one {
+    background-color: green;
+    /* width: 65%; */
+    height: 200px;
+    min-width: 300px;
+}
+
+.two {
+    background-color: hotpink;
+    width: 35%;
+    height: 300px;
+    min-width: 300px;
+}
+
+.three {
+    background-color:blue;
+    /* width: 65%; */
+    height: 200px;
+    min-width: 300px;
+}
+
+.four {
+    background-color:blue;
+    /* width: 65%; */
+    height: 200px;
+    min-width: 300px;
+}
+
+.basket-product-container {
+    width: 65%;
+    min-width: 300px;
+}
