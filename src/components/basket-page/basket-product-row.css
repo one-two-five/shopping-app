@@ -1,18 +1,22 @@
 .basket-product-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
+    border-bottom-style: solid;
 }
 
 .basket-product-row-left {
     background-color: blue;
-    width: 50%;
-    /* min-width: 300px; */
+    /* width: 50%; */
+    min-width: 300px;
+    max-width: 500px;
 }
 
 .basket-product-row-right {
     background-color: green;
-    width: 50%;
-    /* min-width: 300px; */
+    /* width: 50%; */
+    min-width: 300px;
+    max-width: 500px;
 }

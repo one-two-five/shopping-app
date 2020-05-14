@@ -10,6 +10,7 @@ function BasketPage() {
             <div className='basket-flex'>
                 <div className='basket-product-container'>
                     <BasketProductRow/>
+                    <BasketProductRow/>
                 </div>
                 <div className = 'two'>Summary</div>
             </div>
