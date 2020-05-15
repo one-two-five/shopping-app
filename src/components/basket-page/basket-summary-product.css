@@ -1,0 +1,19 @@
+.basket-summary-product {
+    display: flex;
+    max-height: 100px;
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+.basket-summary-product > img {
+    object-fit: contain;
+    max-width: 100px;
+}
+
+.basket-summary-product-info {
+    padding: 10px;
+}
+
+.summary-price {
+    color: red;
+}

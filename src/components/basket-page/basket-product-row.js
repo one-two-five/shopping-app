@@ -5,14 +5,14 @@ function BasketProductRow() {
     return(
         <div className='basket-product-row'>
             <div className='basket-product-row-left'>
-                <h1>aaaa</h1>
-                <h1>bbbb</h1>
-                <h1>cccc</h1>
+                <h1>-</h1>
+                <h1>1</h1>
+                <h1>-</h1>
             </div>
             <div className='basket-product-row-right'>
-                <h1>dddd</h1>
-                <h1>eeee</h1>
-                <h1>ffff</h1>
+                <h1>-</h1>
+                <h1>2</h1>
+                <h1>-</h1>
             </div>
         </div>
     )

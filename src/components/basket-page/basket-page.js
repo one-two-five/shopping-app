@@ -1,6 +1,7 @@
 import React from 'react';
 import './basket-page.css'
 import BasketProductRow from './basket-product-row';
+import BasketSummaryCell from './basket-summary-cell';
 
 function BasketPage() {
     return (
@@ -12,7 +13,7 @@ function BasketPage() {
                     <BasketProductRow/>
                     <BasketProductRow/>
                 </div>
-                <div className = 'two'>Summary</div>
+                    <BasketSummaryCell/>
             </div>
         </div>
         

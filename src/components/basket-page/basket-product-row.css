@@ -4,19 +4,16 @@
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
-    border-bottom-style: solid;
 }
 
 .basket-product-row-left {
     background-color: blue;
-    /* width: 50%; */
     min-width: 300px;
     max-width: 500px;
 }
 
 .basket-product-row-right {
     background-color: green;
-    /* width: 50%; */
     min-width: 300px;
     max-width: 500px;
 }
