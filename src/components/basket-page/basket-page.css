@@ -19,23 +19,8 @@
     border-width: 2px;
 }
 
-.one {
-    background-color: green;
-    /* width: 65%; */
-    height: 200px;
-    min-width: 300px;
-}
-
-.two {
-    background-color: hotpink;
-    width: 35%;
-    height: 300px;
-    min-width: 300px;
-}
-
 .basket-product-container {
     width: 65%;
-    /* min-width: 300px; */
 }
 
 .basket-summary-container {
