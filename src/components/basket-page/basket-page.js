@@ -13,7 +13,9 @@ function BasketPage() {
                     <BasketProductRow/>
                     <BasketProductRow/>
                 </div>
+                <div className='basket-summary-container'>
                     <BasketSummaryCell/>
+                </div>
             </div>
         </div>
         
