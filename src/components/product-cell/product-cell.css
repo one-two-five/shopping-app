@@ -30,3 +30,10 @@
 .was {
     color: grey;
 }
+
+.add {
+    height: 35px;
+    width: 70%;
+    margin-bottom: 15px;
+    font-size: medium;
+}
