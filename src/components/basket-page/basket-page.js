@@ -18,7 +18,6 @@ function BasketPage() {
                 </div>
             </div>
         </div>
-        
     )
 }
 
