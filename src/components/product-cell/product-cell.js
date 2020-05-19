@@ -5,11 +5,11 @@ import { BasketContext, BasketContextProvider } from '../../context/basket-conte
 
 function ProductCell(props) {
 
-    const [count, setCount] = useContext(BasketContext)
+    // const [count, setCount] = useContext(BasketContext)
 
     const increment = () => {
-        setCount(count + 1);
-        console.log(count)
+    //     setCount(count + 1);
+    //     console.log(count)
     }
 
     return (

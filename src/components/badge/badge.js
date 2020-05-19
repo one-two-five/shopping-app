@@ -4,11 +4,10 @@ import { BasketContext } from '../../context/basket-context';
 
 function Badge() {
 
-    const [count, setCount] = useContext(BasketContext);
-
+    const [state, dispatch] = useContext(BasketContext);
     return (
         <div className='badge-container'>
-            <p className='badge'>{count}</p>
+            <p className='badge'>{Object.keys(state.products).length}</p>
         </div>
     );
 }
