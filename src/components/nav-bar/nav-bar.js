@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './nav-bar.css';
 import Badge from '../badge/badge'
+import { BasketContextProvider } from '../../context/basket-context';
 
 function Nav() {
     return (
@@ -19,7 +20,7 @@ function Nav() {
                 <Link className="link" to="./basket">
                     <li>Basket</li>
                 </Link>
-                <Badge count={1}/>
+                    <Badge/>
             </ul>
         </nav>
     )

@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './product-cell.css'
 import Stars from '../stars/stars'
+import { BasketContext, BasketContextProvider } from '../../context/basket-context'
 
 function ProductCell(props) {
 
-    function handleClick() {
-        console.log("clicked")
+    const [count, setCount] = useContext(BasketContext)
+
+    const increment = () => {
+        setCount(count + 1);
+        console.log(count)
     }
 
     return (
@@ -18,7 +22,7 @@ function ProductCell(props) {
             <Stars stars={props.item.stars}/>
             <button type='button' 
                 className='add' 
-                onClick={handleClick}>
+                onClick={increment}>
                 Add to Basket
             </button>
         </div>

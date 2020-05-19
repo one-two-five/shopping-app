@@ -9,6 +9,7 @@ import BasketPage from './components/basket-page/basket-page'
 import Header from './components/header/header';
 import speakers from './data/speakers'
 import turntables from './data/turntables'
+import { BasketContextProvider } from './context/basket-context'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <Router>
+    <BasketContextProvider>
     <div className="App">
         <Header/>
         <Nav/>
@@ -34,6 +36,7 @@ function App() {
             <Route path='/basket' exact component={BasketPage}/>
           </Switch>
     </div>
+    </BasketContextProvider>
     </Router>
   );
 }
