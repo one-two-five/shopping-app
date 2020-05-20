@@ -1,7 +1,6 @@
 import React from 'react';
 import './plp-page.css'
 import ProdudctCell from '../product-cell/product-cell';
-import { BasketContextProvider } from '../../context/basket-context';
 
 function ProductListPage(props) {
 

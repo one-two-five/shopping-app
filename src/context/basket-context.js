@@ -1,4 +1,4 @@
-import React, {useState, createContext, useReducer} from 'react'
+import React, {createContext, useReducer} from 'react'
 
 export const BasketContext = createContext();
 
@@ -10,14 +10,12 @@ const INITIAL_STATE = {
 
 const ADD_PRODUCT = "ADD_PRODUCT"
 const DELETE_PRODUCTS = "DELETE_PRODUCTS"
-const INCREMENT_PRODUCT_COUNT = "INCREMENT_PRODUCT_COUNT"
-const DECREMENT_PRODUCT_COUNT = "DECREMENT_PRODUCT_COUNT"
 
 const reducer = (state, action) => {
     switch (action.type) {
         case ADD_PRODUCT:
             return {
-                products: {...state.products, [action.payload.name]: action.payload.value }
+                products: {...state.products, [action.payload.id]: action.payload.data }
             };
         case DELETE_PRODUCTS:
             break;

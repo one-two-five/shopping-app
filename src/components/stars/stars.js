@@ -10,11 +10,11 @@ function Stars(props) {
 
     for (let index = 0; index < loopAmount; index++) {
         if (index === lastLoopIndex && (remainderStars === 0)) {
-            items.push(<img key={index} className='star' src={require('./star.png')}></img>)
+            items.push(<img key={index} alt='full-star' className='star' src={require('./star.png')}></img>)
         } else if (index === lastLoopIndex && (remainderStars >= 0.5) && (remainderStars < 0.99)) {
-            items.push(<img key={index} className='star' src={require('./star-half.png')}></img>)
-        } else if (index != lastLoopIndex) {
-            items.push(<img key={index} className='star' src={require('./star.png')}></img>)
+            items.push(<img key={index} alt='half-star' className='star' src={require('./star-half.png')}></img>)
+        } else if (index !== lastLoopIndex) {
+            items.push(<img key={index} alt='full-star' className='star' src={require('./star.png')}></img>)
         }
     }
 
