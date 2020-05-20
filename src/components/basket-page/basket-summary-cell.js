@@ -4,31 +4,30 @@ import BasketSummaryProduct from './basket-summary-product'
 import { BasketContext } from '../../context/basket-context'
 
 function BasketSummaryCell(props) {
+
     const [state, dispatch] = useContext(BasketContext)
-    
-    const getTotal = () => {
-        const productArray = Object.keys(state.products).map(key => { 
-            return state.products[key] 
-        })
-        console.log(productArray)
-        
-        const addPrices = productArray.reduce((total, product) => { 
-            return total + product.price 
-        },0)
-        return addPrices
-    }
-    
-    const products = Object.keys(state.products).map(key => {
-        let product = state.products[key]
-        return <BasketSummaryProduct key={key} product={product}/>
+
+    const productArray = Object.keys(state.products).map(key => { 
+        return state.products[key] 
     })
 
-    const total = (Object.keys(state.products).length === 0 ) ? 0 : getTotal()
+    const getTotal = () => {
+        const totalPrice = productArray.reduce((total, product) => { 
+            return total + product.price 
+        }, 0)
+        return totalPrice
+    }
+
+    const basketSummaryProducts = productArray.map( (product, index) => {
+        return <BasketSummaryProduct key={index} product={product}/>
+    })
+
+    const total = (productArray.length === 0 ) ? 0 : getTotal()
     
     return (
         <div className='basket-summary-cell'>
             <h1>Order Summary</h1>
-            {products}
+            {basketSummaryProducts}
             <div className='total'>
                 <h3>Total</h3>
                 <h2 className='summary-price'>£{total}</h2>
