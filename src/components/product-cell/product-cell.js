@@ -5,10 +5,10 @@ import { BasketContext } from '../../context/basket-context'
 
 function ProductCell(props) {
 
-    const [_, dispatch] = useContext(BasketContext)
+    const [state, dispatch] = useContext(BasketContext)
 
     const increment = () => {
-        let payload = {
+        const payload = {
             id: props.item.id,
             data: {
                 img: props.item.img,
@@ -25,6 +25,12 @@ function ProductCell(props) {
             type: "ADD_PRODUCT"
         })
     }
+
+    //add use effect to store local state in this object for added
+
+    // const buttonMessage = (state.products[props.item.id] === undefined ? "")
+    // console.log(`message: ${buttonMessage}`)
+    // console.log(`blah`)
 
     return (
         <div className='product-cell'>
