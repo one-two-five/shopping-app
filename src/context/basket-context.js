@@ -3,9 +3,7 @@ import React, {createContext, useReducer} from 'react'
 export const BasketContext = createContext();
 
 const INITIAL_STATE = {
-    products: {
-        
-    }
+    products: {}
 }
 
 const ADD_PRODUCT = "ADD_PRODUCT"
@@ -15,10 +13,14 @@ const reducer = (state, action) => {
     switch (action.type) {
         case ADD_PRODUCT:
             return {
-                products: {...state.products, [action.payload.id]: action.payload.data }
+                products: { ...state.products, [action.payload.id]: action.payload.data }
             };
         case DELETE_PRODUCTS:
-            break;
+            let filteredProducts = { ...state.products }
+            delete filteredProducts[action.payload.id]
+            return {
+                products: filteredProducts
+            };
         default:
             return INITIAL_STATE
     }

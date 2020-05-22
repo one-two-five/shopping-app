@@ -6,9 +6,15 @@ import { BasketContext } from '../../context/basket-context';
 
 function BasketPage() {
     const [state, dispatch] = useContext(BasketContext)
+    console.log(state)
+    
     const products = Object.keys(state.products).map(key => {
         let product = state.products[key]
-        return <BasketProductRow key={key} product={product}/>
+        return <BasketProductRow key={key} product={product} id={key}/>
+    }) 
+
+    Object.keys(state.products).map(key => {
+        console.log(key)
     }) 
 
     return (

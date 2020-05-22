@@ -19,7 +19,6 @@ function ProductCell(props) {
                 stars: props.item.stars,
             }
         }
-        console.log(payload)
         dispatch({
             payload: payload,
             type: "ADD_PRODUCT"
